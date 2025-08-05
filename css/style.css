@@ -130,3 +130,76 @@ ul {
 span {
   display: inline-block;
 }
+
+/* ============= Page styling ============ */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-xl) 0;
+
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.heading {
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+.heading span {
+  font-weight: var(--fw-extra-light);
+  color: var(--Grey-400);
+}
+.paragraph {
+  color: var(--Grey-400);
+  max-width: 40%;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  max-width: 400px;
+  background-color: var(--White);
+
+  padding: var(--space-lg);
+  border-radius: var(--space-sm);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+  margin-bottom: var(--space-sm);
+}
+.card-text {
+  margin-bottom: var(--space-lg);
+}
+.card-image {
+  width: 80px;
+  align-self: flex-end;
+  margin-top: var(--space-md);
+}
+.card-1 {
+  border-top: 6px solid var(--Blue);
+}
+.card-2 {
+  border-top: 6px solid var(--Red);
+  margin-bottom: var(--space-lg);
+}
+.card-3 {
+  border-top: 6px solid var(--Orange);
+}
+.card-4 {
+  border-top: 6px solid var(--Cyan);
+}
+footer {
+  padding: var(--space-md);
+  text-align: center;
+}
+/* Try use Icon image as background of card */
+/* Working on responesive */
