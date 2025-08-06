@@ -158,19 +158,18 @@ span {
   text-align: center;
 }
 .card-container {
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 140px);
   gap: var(--space-lg);
+
+  /* gap: var(--space-lg); */
 }
 .card {
   display: flex;
   flex-direction: column;
-  height: 280px;
   max-width: 400px;
   background-color: var(--White);
-
-  flex: 1;
 
   padding: var(--space-lg);
   border-radius: var(--space-sm);
@@ -191,22 +190,29 @@ span {
   border-top: 6px solid var(--Blue);
   background: url("../images/icon-supervisor.svg") no-repeat 90% 80%;
   background-size: 80px 80px;
+
+  grid-row: 2 / span 2;
 }
 .card-2 {
   border-top: 6px solid var(--Red);
-  margin-bottom: var(--space-lg);
   background: url("../images/icon-team-builder.svg") no-repeat 90% 80%;
   background-size: 80px 80px;
+
+  grid-row: 1 / span 2;
 }
 .card-3 {
   border-top: 6px solid var(--Orange);
   background: url("../images/icon-karma.svg") no-repeat 90% 80%;
   background-size: 80px 80px;
+
+  grid-row: 3 / span 2;
 }
 .card-4 {
   border-top: 6px solid var(--Cyan);
   background: url("../images/icon-calculator.svg") no-repeat 90% 80%;
   background-size: 80px 80px;
+
+  grid-row: 2 / span 2;
 }
 footer {
   padding: var(--space-md);
